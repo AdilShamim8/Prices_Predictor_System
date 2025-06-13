@@ -42,3 +42,11 @@ But everyone is doing house price prediction system, **HOW it will differentiate
    a. Differentiate our project by integrating MLOps practices using ZenML and MLflow.  
    b. Implement CI/CD pipelines to automate testing, deployment, of the model in production.  
    c. Ensure the model is not only accurate but also maintainable, scalable, and ready for real-world use.
+
+## First step is always to load the data!
+
+We will ingest data first; here’s how we will do it little differently:
+- Use Design Patterns to handle other sets of data accordingly.
+- Make it readable, and reproducible in that sense.
+
+We will make use of Factory Design Pattern but before we go, here’s small explanation of Factory design pattern.
