@@ -70,7 +70,7 @@ Imagine you’re developing an e-commerce application. Customers can choose diff
 
 Example code in Python – `explanations/strategy_design_pattern.py`
 
-#@ Template Pattern
+## Template Pattern
 
 **Real-World Analogy:**
 
