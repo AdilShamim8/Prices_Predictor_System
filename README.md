@@ -58,4 +58,24 @@ Imagine you run a coffee shop. Customers can order different types of coffee, bu
 - **CoffeeMachine (Factory):** Has a method to make coffee.
 - **Espresso, Latte, Cappuccino (ConcreteProducts):** Different types of coffee that can be made by the machine.
 
-Example code in python – `explanations/factory_design_pattern.py`
+Example code in Python – `explanations/factory_design_pattern.py`
+
+## Strategy Pattern
+
+Imagine you’re developing an e-commerce application. Customers can choose different payment methods like Credit Card, PayPal, or Bitcoin. Each payment method has a different implementation, but the overall process is the same: the customer pays for the order.
+
+- **PaymentMethod (Strategy):** An interface that defines how payments are processed.
+- **CreditCardPayment, PayPalPayment, BitcoinPayment (ConcreteStrategies):** Different implementations of payment processing.
+- **ShoppingCart (Context):** Uses a payment method to process a customer’s payment.
+
+Example code in Python – `explanations/strategy_design_pattern.py`
+
+#@ Template Pattern
+
+**Real-World Analogy:**
+
+Imagine you run a restaurant with a set menu for different cuisines. Each cuisine (like Italian, Chinese, or Indian) has a specific sequence of courses: appetizer, main course, dessert, and beverage. The sequence of serving these courses is the same, but the dishes served at each step vary depending on the cuisine.
+
+For example, in an Italian meal, the appetizer might be bruschetta, the main course could be pasta, dessert might be tiramisu, and the beverage could be a glass of wine. In a Chinese meal, the appetizer could be spring rolls, the main course might be stir-fried noodles, dessert could be fortune cookies, and the beverage could be tea.
+
+The template here is the overall dining sequence: appetizer, main course, dessert, and beverage. The customizable steps are the specific dishes served at each stage, which change based on the cuisine.
