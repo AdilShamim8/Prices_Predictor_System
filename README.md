@@ -20,7 +20,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [Key Features](#-key-features)
@@ -39,7 +39,7 @@
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This project implements a **production-ready machine learning system** for predicting house prices using the Ames Housing dataset. Unlike typical ML projects that end at model training, this system demonstrates enterprise-grade MLOps practices including:
 
@@ -54,23 +54,23 @@ The system is designed with **scalability**, **maintainability**, and **reproduc
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-### 🚀 MLOps Excellence
+### MLOps Excellence
 
 - **End-to-End Pipeline Orchestration**: Fully automated ML workflows from data ingestion to deployment
 - **Experiment Tracking**: Track all experiments, metrics, and artifacts with MLflow
 - **Model Registry**: Automated model versioning and promotion to production
 - **Reproducibility**: Every pipeline run is tracked and reproducible
 
-### 🏗️ Software Engineering Best Practices
+### Software Engineering Best Practices
 
 - **Design Patterns**: Factory, Strategy, and Template patterns for clean, maintainable code
 - **Modular Architecture**: Loosely coupled components for easy testing and extension
 - **Type Hints**: Full type annotations for better code quality
 - **Logging**: Comprehensive logging throughout the pipeline
 
-### 🔬 Advanced ML Techniques
+### Advanced ML Techniques
 
 - **Comprehensive EDA**: Univariate, bivariate, and multivariate analysis
 - **Feature Engineering**: Log transformations for skewed distributions
@@ -78,7 +78,7 @@ The system is designed with **scalability**, **maintainability**, and **reproduc
 - **Missing Value Imputation**: Intelligent handling of missing data
 - **Model Evaluation**: Multiple metrics including MSE and R²
 
-### 🌐 Deployment & Serving
+### Deployment & Serving
 
 - **Automated Deployment**: Continuous deployment pipeline with ZenML + MLflow
 - **REST API**: Production-ready API endpoint for predictions
@@ -99,14 +99,14 @@ The system is designed with **scalability**, **maintainability**, and **reproduc
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│                   DEPLOYMENT PIPELINE                            │
-├──────���──────────────────────────────────────────────────────────┤
+│                   DEPLOYMENT PIPELINE                           │
+├─────────────────────────────────────────────────────────────────┤
 │  Load Trained Model → Deploy to MLflow Server →                 │
 │  Start Prediction Service                                       │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│                   INFERENCE PIPELINE                             │
+│                   INFERENCE PIPELINE                            │
 ├─────────────────────────────────────────────────────────────────┤
 │  Load Data → Preprocess → Predict → Return Results              │
 └─────────────────────────────────────────────────────────────────┘
@@ -124,7 +124,7 @@ The system is designed with **scalability**, **maintainability**, and **reproduc
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ### Core ML & MLOps
 - **[ZenML](https://zenml.io/)** `0.64.0` - ML pipeline orchestration framework
@@ -143,7 +143,7 @@ The system is designed with **scalability**, **maintainability**, and **reproduc
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
@@ -190,7 +190,7 @@ zenml up
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Train the Model
 
@@ -267,7 +267,7 @@ Then navigate to `http://localhost:5000` in your browser.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 Prices_Predictor_System/
@@ -326,9 +326,9 @@ Prices_Predictor_System/
 
 ---
 
-## 🔧 Pipeline Components
+## Pipeline Components
 
-### 1️⃣ Data Ingestion
+### 1️ Data Ingestion
 
 **Purpose**: Flexible data loading supporting multiple formats
 
@@ -367,7 +367,7 @@ df_cleaned = handler.handle_missing_values(df)
 
 ---
 
-### 3️⃣ Feature Engineering
+### 3️ Feature Engineering
 
 **Purpose**: Transform features to improve model performance
 
@@ -386,7 +386,7 @@ df_transformed = engineer.apply_transformations(df)
 
 ---
 
-### 4️⃣ Outlier Detection
+### 4️ Outlier Detection
 
 **Purpose**: Identify and remove extreme values that could skew predictions
 
@@ -404,7 +404,7 @@ df_clean = detector.detect_and_remove_outliers(df, column_name="SalePrice")
 
 ---
 
-### 5️⃣ Model Training
+### 5️ Model Training
 
 **Purpose**: Train regression model on processed data
 
@@ -423,7 +423,7 @@ Input Features → StandardScaler → Linear Regression → Price Prediction
 
 ---
 
-### 6️⃣ Model Evaluation
+### 6️ Model Evaluation
 
 **Purpose**: Assess model performance using multiple metrics
 
@@ -439,7 +439,7 @@ metrics = evaluator.evaluate(model, X_test, y_test)
 
 ---
 
-### 7️⃣ Model Deployment
+### 7️ Model Deployment
 
 **Purpose**: Deploy trained model as REST API service
 
@@ -459,7 +459,7 @@ python run_deployment.py --stop-service
 
 ---
 
-## 🎨 Design Patterns
+##  Design Patterns
 
 This project implements **three fundamental design patterns** to ensure clean, maintainable, and extensible code.
 
@@ -558,7 +558,7 @@ class MissingValuesAnalysisTemplate(ABC):
 
 ---
 
-## 📊 Model Performance
+## Model Performance
 
 ### Dataset Information
 
@@ -590,7 +590,7 @@ Top predictive features:
 
 ---
 
-## 📖 API Documentation
+## API Documentation
 
 ### Prediction Endpoint
 
@@ -674,7 +674,7 @@ Top predictive features:
 
 ---
 
-## 🔍 Exploratory Data Analysis
+## Exploratory Data Analysis
 
 The project includes comprehensive EDA modules in the `analysis/` directory:
 
@@ -732,7 +732,7 @@ analyzer.analyze(df[['SalePrice', 'Gr Liv Area', 'Overall Qual']])
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Run Unit Tests
 
@@ -748,7 +748,7 @@ python sample_predict.py
 
 ---
 
-## 🚦 CI/CD (Future Enhancement)
+## CI/CD (Future Enhancement)
 
 Planned CI/CD pipeline stages:
 
@@ -760,7 +760,7 @@ Planned CI/CD pipeline stages:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these guidelines:
 
@@ -797,7 +797,7 @@ pytest tests/
 
 ---
 
-## 📝 Future Enhancements
+## Future Enhancements
 
 - [ ] **Advanced Models**: Implement XGBoost, Random Forest, Neural Networks
 - [ ] **Hyperparameter Tuning**: Add automated hyperparameter optimization
@@ -813,7 +813,7 @@ pytest tests/
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **Apache License 2.0** - see the [LICENSE](LICENSE) file for details.
 
@@ -828,7 +828,7 @@ This project is licensed under the **Apache License 2.0** - see the [LICENSE](LI
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Ames Housing Dataset**: Dean De Cock for providing the comprehensive housing dataset
 - **ZenML**: For the excellent MLOps framework
@@ -837,7 +837,7 @@ This project is licensed under the **Apache License 2.0** - see the [LICENSE](LI
 
 ---
 
-## 📚 References & Resources
+## References & Resources
 
 ### Documentation
 - [ZenML Documentation](https://docs.zenml.io/)
@@ -858,7 +858,5 @@ This project is licensed under the **Apache License 2.0** - see the [LICENSE](LI
 <div align="center">
 
 **⭐ If you find this project helpful, please consider giving it a star! ⭐**
-
-Made with ❤️ by [Adil Shamim](https://github.com/AdilShamim8)
 
 </div>
