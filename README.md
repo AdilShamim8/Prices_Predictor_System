@@ -347,7 +347,7 @@ df = data_ingestor.ingest("data/archive.zip")
 
 ---
 
-### 2️⃣ Missing Value Handling
+### 2️ Missing Value Handling
 
 **Purpose**: Intelligent imputation of missing data
 
@@ -819,7 +819,7 @@ This project is licensed under the **Apache License 2.0** - see the [LICENSE](LI
 
 ---
 
-## 👤 Author
+## Author
 
 **Adil Shamim**
 
