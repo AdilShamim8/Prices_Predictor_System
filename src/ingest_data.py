@@ -56,7 +56,7 @@ class DataIngestorFactory:
 # Example usage:
 if __name__ == "__main__":
     # # Specify the file path
-    # file_path = "D:/prices-predictor-system/data/archive.zip"
+    # file_path = "/Users/ayushsingh/Desktop/end-to-end-production-grade-projects/prices-predictor-system/data/archive.zip"
 
     # # Determine the file extension
     # file_extension = os.path.splitext(file_path)[1]
