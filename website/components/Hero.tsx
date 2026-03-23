@@ -1,0 +1,47 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+
+import { Button } from "@/components/ui/button";
+
+export function Hero() {
+  return (
+    <section className="relative overflow-hidden rounded-3xl border border-black/5 bg-hero-glow p-8 md:p-14">
+      <motion.p
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="mb-4 inline-flex rounded-full bg-white/75 px-4 py-1 text-xs font-bold uppercase tracking-[0.2em] text-brand-slate"
+      >
+        NeuroBridge
+      </motion.p>
+      <motion.h1
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1, duration: 0.6 }}
+        className="max-w-2xl text-4xl font-black leading-tight text-brand-ink md:text-6xl"
+      >
+        AI That Speaks Your Language
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+        className="mt-4 max-w-xl text-base text-brand-slate md:text-lg"
+      >
+        Transform generic AI output into profile-aware communication for ADHD, Autism, Dyslexia, Anxiety, and Dyscalculia.
+      </motion.p>
+      <motion.div
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.6 }}
+        className="mt-8 flex flex-wrap gap-3"
+      >
+        <Link href="/playground"><Button>Try it now <ArrowRight className="ml-1 h-4 w-4" /></Button></Link>
+        <a href="https://github.com" target="_blank" rel="noreferrer"><Button variant="secondary">View on GitHub</Button></a>
+      </motion.div>
+    </section>
+  );
+}
