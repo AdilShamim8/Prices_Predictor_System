@@ -260,4 +260,4 @@ make clean
 
 ## License
 
-MIT © 2024 — See [LICENSE](LICENSE) for details.
+MIT © 2026 — See [LICENSE](LICENSE) for details.
