@@ -1,0 +1,19 @@
+# ── Core ML / data science (Python 3.12 compatible versions) ──────────────────
+matplotlib>=3.8.0
+numpy>=1.26.0
+pandas>=2.1.0
+scikit-learn>=1.3.2
+seaborn>=0.13.0
+statsmodels>=0.14.1
+
+# ── MLOps orchestration + experiment tracking ──────────────────────────────────
+mlflow>=2.15.1
+zenml[server]>=0.64.0
+
+# ── Application / UI ───────────────────────────────────────────────────────────
+requests>=2.31.0
+rich>=13.7.1
+streamlit>=1.35.0
+
+# ── CLI utilities ──────────────────────────────────────────────────────────────
+click>=8.1.3
